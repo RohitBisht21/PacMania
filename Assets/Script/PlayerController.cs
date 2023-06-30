@@ -5,15 +5,21 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     MovementController movementController;
+
+    public SpriteRenderer sprite;
+    public Animator animator;
     // Start is called before the first frame update
     void Awake()
     {
+        sprite = GetComponentInChildren<SpriteRenderer>();
+        animator = GetComponentInChildren<Animator>();
         movementController = GetComponent<MovementController>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        animator.SetBool("moving", true);
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             movementController.SetDirection("left");
@@ -30,5 +36,28 @@ public class PlayerController : MonoBehaviour
         {
             movementController.SetDirection("down");
         }
+
+        bool flipX = false;
+        bool flipY = false;
+        if (movementController.lastMovngDirection == "left")
+        {
+            animator.SetInteger("direction",0);
+        }
+        else if (movementController.lastMovngDirection == "right")
+        {
+            animator.SetInteger("direction", 0);
+            flipX = true;
+        }
+        else if(movementController.lastMovngDirection== "up")
+        {
+            animator.SetInteger("direction", 1);
+        }
+        else if(movementController.lastMovngDirection== "down")
+        {
+            animator.SetInteger("direction", 1);
+            flipY = true;
+        }
+        sprite.flipY = flipY;
+        sprite.flipX = flipX;
     }
 }

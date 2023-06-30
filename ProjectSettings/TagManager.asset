@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Node
+  - GhostNode
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -50,4 +52,7 @@ TagManager:
     locked: 0
   - name: New Layer 3
     uniqueID: 3316756097
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 1414141963
     locked: 0

@@ -12,9 +12,12 @@ public class MovementController : MonoBehaviour
 
     public GameManager gameManager;
     public bool canWarp = true;
+
+    public bool isGhost = false;
     // Start is called before the first frame update
     void Awake()
     {
+        lastMovngDirection = "left";
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
@@ -32,6 +35,11 @@ public class MovementController : MonoBehaviour
         }
         if((transform.position.x == currentNode.transform.position.x && transform.position.y == currentNode.transform.position.y) || reverseDirection)
         {
+            if (isGhost)
+            {
+                GetComponent<EnemyController>().reachedCenterOfNode(currentNodeController);   
+            }
+
            if (currentNodeController.isWarpNodeLeft && canWarp)
             {
                 currentNode = gameManager.rightWarpNode;

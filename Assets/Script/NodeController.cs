@@ -16,9 +16,23 @@ public class NodeController : MonoBehaviour
 
     public bool isWarpNodeRight = false;
     public bool isWarpNodeLeft = false;
+
+    public bool isPelletNode = false;
+    public bool hasPelletNode = false;
+    public SpriteRenderer pelletSprite;
+
+    public GameManager gameManager;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        if (transform.childCount > 0)
+        {
+            isPelletNode = true;
+            hasPelletNode = true;
+            pelletSprite = GetComponentInChildren<SpriteRenderer>();
+        }
+
         RaycastHit2D[] hitsDown;
         hitsDown = Physics2D.RaycastAll(transform.position, -Vector2.up);
 
@@ -99,6 +113,16 @@ public class NodeController : MonoBehaviour
         else
         {
             return null;
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag=="Player" && hasPelletNode)
+        {
+            hasPelletNode = false;
+            pelletSprite.enabled = false;
+            gameManager.collectedPellet(this);
         }
     }
 }
