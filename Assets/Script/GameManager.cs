@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject pacman;
+
     public GameObject leftWarpNode;
     public GameObject rightWarpNode;
     public AudioSource munch1;
@@ -13,9 +15,25 @@ public class GameManager : MonoBehaviour
 
     public int score;
     public Text scoreText;
+
+    public GameObject ghostNodeLeft;
+    public GameObject ghostNodeRight;
+    public GameObject ghostNodeCenter;
+    public GameObject ghostNodeStart;
+
+    public enum GhostMode
+    {
+        chase, scatter
+    }
+
+    public GhostMode currentGhostMode;
+
     // Start is called before the first frame update
     void Awake()
     {
+        currentGhostMode = GhostMode.chase;
+        ghostNodeStart.GetComponent<NodeController>().isGhostStartingNode = true;
+        pacman = GameObject.Find("Player");
         score = 0;
         currentMunch = 0;
     }
