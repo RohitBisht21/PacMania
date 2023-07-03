@@ -188,7 +188,20 @@ public class EnemyController : MonoBehaviour
     
     void DetermineOrangeGhostDirection()
     {
+            float distance = Vector2.Distance(gameManager.pacman.transform.position, transform.position);
+            float distanceBetweenNodes = 0.31f;
 
+            if(distance<0)
+            {
+                distance = -1;
+            }
+            if(distance <= distanceBetweenNodes * 8)
+            {
+                DetermineRedGhostDirection();
+            }
+            else{
+                
+            }
     }
     string GetClosestDirection(Vector2 target)
     {
