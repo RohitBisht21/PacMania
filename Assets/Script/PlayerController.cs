@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     MovementController movementController;
 
+
     public SpriteRenderer sprite;
     public Animator animator;
     // Start is called before the first frame update
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour
         sprite = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponentInChildren<Animator>();
         movementController = GetComponent<MovementController>();
+        movementController.lastMovngDirection = "left";
     }
 
     // Update is called once per frame

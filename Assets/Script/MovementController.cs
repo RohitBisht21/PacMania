@@ -17,7 +17,6 @@ public class MovementController : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        lastMovngDirection = "left";
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
@@ -37,7 +36,7 @@ public class MovementController : MonoBehaviour
         {
             if (isGhost)
             {
-                GetComponent<EnemyController>().reachedCenterOfNode(currentNodeController);   
+                GetComponent<EnemyController>().ReachedCenterOfNode(currentNodeController);   
             }
 
            if (currentNodeController.isWarpNodeLeft && canWarp)
