@@ -40,14 +40,9 @@ public class EnemyController : MonoBehaviour
 
     public bool testRespawn = false;
 
-    public bool isFrightened = false;
-
-    public GameObject[] scatterNodes;
-    public int scatterNodesIndex;
     // Start is called before the first frame update
     void Awake()
     {
-        scatterNodesIndex = 0;
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         movementController = GetComponent<MovementController>();
         if (ghostType==GhostType.red)
@@ -88,46 +83,17 @@ public class EnemyController : MonoBehaviour
             ghostNodesState = GhostNodesStatesEnum.respawning;
             testRespawn = false;
         }
-        if (movementController.currentNode.GetComponent<NodeController>().isSideNode)
-        {
-            movementController.SetSpeed(1);
-        }
-        else
-        {
-            movementController.SetSpeed(3);
-        }
-        
     }
 
     public void reachedCenterOfNode(NodeController nodeController)
     {
         if (ghostNodesState == GhostNodesStatesEnum.movingInNodes)
-        {
-            if (gameManager.currentGhostMode == GameManager.GhostMode.scatter)
-            {
-                if(transform.position.x == scatterNodes[scatterNodesIndex].transform.position.x && transform.position.y == scatterNodes[scatterNodesIndex].transform.position.y)
-                {
-                    scatterNodesIndex++;
-
-                    if(scatterNodesIndex == scatterNodes.Length - 1)
-                    {
-                        scatterNodesIndex = 0;
-                    }
-                }
-                string direction = GetClosestDirection(scatterNodes[scatterNodesIndex].transform.position);
-                movementController.SetDirection(direction);
-            }
-            else if (isFrightened)
-            {
-
-            }
-            else 
-            { 
+        {   
                 if (ghostType == GhostType.red)
                 {
                 DetermineRedGhostDirection();
-                }
-            }
+                } 
+              
         }
         else if(ghostNodesState == GhostNodesStatesEnum.respawning)
         {
@@ -215,7 +181,7 @@ public class EnemyController : MonoBehaviour
         {
             target.y += distanceBetweennodes*2;
         }
-        else if(pacmansDirection== "dpwn")
+        else if(pacmansDirection== "down")
         {
             target.y -= distanceBetweennodes*2;
         }

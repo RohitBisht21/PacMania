@@ -39,7 +39,7 @@ public class MovementController : MonoBehaviour
                 GetComponent<EnemyController>().reachedCenterOfNode(currentNodeController);   
             }
 
-           if(currentNodeController.isWarpNodeLeft && canWarp)
+            if (currentNodeController.isWarpNodeLeft && canWarp)
             {
                 currentNode = gameManager.rightWarpNode;
                 direction = "left";
@@ -47,7 +47,7 @@ public class MovementController : MonoBehaviour
                 transform.position = currentNode.transform.position;
                 canWarp = false;
             }
-           else if (currentNodeController.isWarpNodeRight && canWarp)
+            else if (currentNodeController.isWarpNodeRight && canWarp)
             {
                 currentNode = gameManager.leftWarpNode;
                 direction = "right";
@@ -55,19 +55,26 @@ public class MovementController : MonoBehaviour
                 transform.position = currentNode.transform.position;
                 canWarp = false;
             }
-            GameObject newNode = currentNodeController.GetNodeFromDirection(direction);
-            if (newNode != null)
-            {
-                currentNode = newNode;
-                lastMovngDirection = direction;
-            }
             else
             {
-                direction = lastMovngDirection;
-                newNode= currentNodeController.GetNodeFromDirection(direction);
+                if (currentNodeController.isGhostStartingNode && direction == "down" && (!isGhost || GetComponent<EnemyController>().ghostNodesState != EnemyController.GhostNodesStatesEnum.respawning))
+                {
+                    direction = lastMovngDirection;
+                }
+                GameObject newNode = currentNodeController.GetNodeFromDirection(direction);
                 if (newNode != null)
                 {
                     currentNode = newNode;
+                    lastMovngDirection = direction;
+                }
+                else
+                {
+                    direction = lastMovngDirection;
+                    newNode = currentNodeController.GetNodeFromDirection(direction);
+                    if (newNode != null)
+                    {
+                        currentNode = newNode;
+                    }
                 }
             }
         }
@@ -76,12 +83,6 @@ public class MovementController : MonoBehaviour
             canWarp = true;
         }
     }
-
-    public void SetSpeed(float newspeed)
-    {
-        speed = newspeed;
-    }
-
     public void SetDirection(string newDirection)
     {
         direction = newDirection;
