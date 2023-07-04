@@ -21,8 +21,6 @@ public class NodeController : MonoBehaviour
     public bool hasPelletNode = false;
     public SpriteRenderer pelletSprite;
 
-    public bool isGhostStartingNode = false;
-
     public GameManager gameManager;
     // Start is called before the first frame update
     void Awake()
@@ -87,7 +85,7 @@ public class NodeController : MonoBehaviour
             }
         }
 
-        if(isGhostStartingNode)
+        if(isGhostStartingNode == true)
         {
             canMoveDown = true;
             nodeDown = gameManager.ghostNodeCenter;

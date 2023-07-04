@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     MovementController movementController;
 
+
     public SpriteRenderer sprite;
     public Animator animator;
     // Start is called before the first frame update
