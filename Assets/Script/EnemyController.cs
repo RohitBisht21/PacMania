@@ -37,8 +37,14 @@ public class EnemyController : MonoBehaviour
 
     public GameManager gameManager;
     // Start is called before the first frame update
+    public bool isVisible=true;
+    public SpriteRenderer ghostSprite;
+    public SpriteRenderer eyesSprite;
     void Awake()
     {
+        ghostSprite = GetComponent<SpriteRenderer>();
+        eyesSprite = GetComponentInChildren<SpriteRenderer>();
+
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         movementController = GetComponent<MovementController>();
         if(ghostType==GhostType.red)
@@ -71,7 +77,15 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(isVisible)
+        {
+            ghostSprite.enabled = true;
+            eyesSprite.enabled = true;
+        }
+        else{
+            ghostSprite.enabled = false;
+            eyesSprite.enabled = false;
+        }
     }
 
     public void ReachedCenterOfNode(NodeController nodeController)
@@ -259,13 +273,35 @@ public class EnemyController : MonoBehaviour
         return newDirection;
 
     }
+
+    public void SetVisible(bool newVisible){
+        isVisible = newVisible;
+    }
    
         public void OnTriggerEnter2D(Collider2D collision){
             if(collision.tag== "Player"){
                 if(gameManager.redGhost || gameManager.blueGhost || gameManager.pinkGhost || gameManager.OrangeGhost){
                     gameManager.death.Play();
                     Time.timeScale = 0;
+                    SetVisible(false);
+                     if (gameManager.redGhost != null)
+            {
+                gameManager.redGhost.SetActive(false);
+            }
+            if (gameManager.blueGhost != null)
+            {
+                gameManager.blueGhost.SetActive(false);
+            }
+            if (gameManager.pinkGhost != null)
+            {
+                gameManager.pinkGhost.SetActive(false);
+            }
+            if (gameManager.OrangeGhost != null)
+            {
+                gameManager.OrangeGhost.SetActive(false);
+            }
                 }
+
             }
             else{
                 Debug.Log("NOT DETECTED");

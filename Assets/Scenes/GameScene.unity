@@ -2032,6 +2032,9 @@ MonoBehaviour:
   startingNode: {fileID: 0}
   readyToLeaveHome: 0
   gameManager: {fileID: 0}
+  isVisible: 1
+  ghostSprite: {fileID: 0}
+  eyesSprite: {fileID: 0}
 --- !u!4 &67099183
 Transform:
   m_ObjectHideFlags: 0
@@ -23044,6 +23047,9 @@ MonoBehaviour:
   startingNode: {fileID: 0}
   readyToLeaveHome: 0
   gameManager: {fileID: 0}
+  isVisible: 1
+  ghostSprite: {fileID: 0}
+  eyesSprite: {fileID: 0}
 --- !u!4 &890185876
 Transform:
   m_ObjectHideFlags: 0
@@ -23283,6 +23289,9 @@ MonoBehaviour:
   startingNode: {fileID: 0}
   readyToLeaveHome: 0
   gameManager: {fileID: 0}
+  isVisible: 1
+  ghostSprite: {fileID: 0}
+  eyesSprite: {fileID: 0}
 --- !u!4 &897353676
 Transform:
   m_ObjectHideFlags: 0
@@ -53756,6 +53765,9 @@ MonoBehaviour:
   startingNode: {fileID: 0}
   readyToLeaveHome: 0
   gameManager: {fileID: 0}
+  isVisible: 1
+  ghostSprite: {fileID: 0}
+  eyesSprite: {fileID: 0}
 --- !u!4 &2036297632
 Transform:
   m_ObjectHideFlags: 0

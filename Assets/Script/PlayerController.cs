@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     MovementController movementController;
+    EnemyController enemyController;
 
 
     public SpriteRenderer sprite;
@@ -12,6 +13,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        enemyController=GetComponent<EnemyController>();
         sprite = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponentInChildren<Animator>();
         movementController = GetComponent<MovementController>();
@@ -62,4 +64,15 @@ public class PlayerController : MonoBehaviour
         sprite.flipY = flipY;
         sprite.flipX = flipX;
     }
+
+     public void OnTriggerEnter2D(Collider2D collision){
+            if(collision.tag== "Enemy"){
+               animator.SetBool("dead",true);
+               
+       
+            }
+            else{
+                Debug.Log("NOT DETECTED");
+            }
+        }
 }
