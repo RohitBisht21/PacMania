@@ -45,21 +45,25 @@ public class EnemyController : MonoBehaviour
         {
             ghostNodesState = GhostNodesStatesEnum.startNode;
             startingNode = ghostNodeStart;
+            readyToLeaveHome = true;
         }
         else if(ghostType==GhostType.pink)
         {
             ghostNodesState = GhostNodesStatesEnum.centerNode;
             startingNode = ghostNodeCenter;
+            readyToLeaveHome = true;
         }
         else if (ghostType == GhostType.blue)
         {
             ghostNodesState = GhostNodesStatesEnum.leftNode;
             startingNode = ghostNodeLeft;
+            readyToLeaveHome = true;
         }
         else if (ghostType == GhostType.orange)
         {
             ghostNodesState = GhostNodesStatesEnum.rightNode;
             startingNode = ghostNodeRight;
+            readyToLeaveHome = true;
         }
         movementController.currentNode = startingNode;  
     }
@@ -199,9 +203,7 @@ public class EnemyController : MonoBehaviour
             {
                 DetermineRedGhostDirection();
             }
-            else{
-                
-            }
+            
     }
     string GetClosestDirection(Vector2 target)
     {
@@ -257,4 +259,16 @@ public class EnemyController : MonoBehaviour
         return newDirection;
 
     }
+   
+        public void OnTriggerEnter2D(Collider2D collision){
+            if(collision.tag== "Player"){
+                if(gameManager.redGhost || gameManager.blueGhost || gameManager.pinkGhost || gameManager.OrangeGhost){
+                    gameManager.death.Play();
+                    Time.timeScale = 0;
+                }
+            }
+            else{
+                Debug.Log("NOT DETECTED");
+            }
+        }
 }

@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     public AudioSource munch1;
     public AudioSource munch2;
+    public AudioSource death;
     public int currentMunch;
 
     public int score;

@@ -24,7 +24,10 @@ public class MovementController : MonoBehaviour
     void Update()
     {
         NodeController currentNodeController = currentNode.GetComponent<NodeController>();
-
+            if(currentNodeController==null)
+            {
+                Debug.Log(currentNode.transform.position + "  "+ currentNode.gameObject.name);
+            }
         transform.position = Vector2.MoveTowards(transform.position, currentNode.transform.position, speed * Time.deltaTime);
 
         bool reverseDirection = false;
