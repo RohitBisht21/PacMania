@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class EnemyController : MonoBehaviour
 {
     public enum GhostNodesStatesEnum
@@ -32,6 +32,7 @@ public class EnemyController : MonoBehaviour
     public MovementController movementController;
 
     public GameObject startingNode;
+
 
     public bool readyToLeaveHome = false;
 
@@ -277,34 +278,15 @@ public class EnemyController : MonoBehaviour
     public void SetVisible(bool newVisible){
         isVisible = newVisible;
     }
-   
-        public void OnTriggerEnter2D(Collider2D collision){
+
+      public void OnTriggerEnter2D(Collider2D collision){
             if(collision.tag== "Player"){
                 if(gameManager.redGhost || gameManager.blueGhost || gameManager.pinkGhost || gameManager.OrangeGhost){
                     gameManager.death.Play();
-                    Time.timeScale = 0;
-                    SetVisible(false);
-                     if (gameManager.redGhost != null)
-            {
-                gameManager.redGhost.SetActive(false);
-            }
-            if (gameManager.blueGhost != null)
-            {
-                gameManager.blueGhost.SetActive(false);
-            }
-            if (gameManager.pinkGhost != null)
-            {
-                gameManager.pinkGhost.SetActive(false);
-            }
-            if (gameManager.OrangeGhost != null)
-            {
-                gameManager.OrangeGhost.SetActive(false);
-            }
                 }
-
-            }
-            else{
-                Debug.Log("NOT DETECTED");
+                 SceneManager.LoadScene("Restart");
             }
         }
+   
+      
 }

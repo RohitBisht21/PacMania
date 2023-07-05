@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerController : MonoBehaviour
 {
     MovementController movementController;
@@ -10,9 +11,12 @@ public class PlayerController : MonoBehaviour
 
     public SpriteRenderer sprite;
     public Animator animator;
+
+    public GameManager gameManager;
     // Start is called before the first frame update
     void Awake()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         enemyController=GetComponent<EnemyController>();
         sprite = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponentInChildren<Animator>();
@@ -65,14 +69,5 @@ public class PlayerController : MonoBehaviour
         sprite.flipX = flipX;
     }
 
-     public void OnTriggerEnter2D(Collider2D collision){
-            if(collision.tag== "Enemy"){
-               animator.SetBool("dead",true);
-               
-       
-            }
-            else{
-                Debug.Log("NOT DETECTED");
-            }
-        }
+      
 }
