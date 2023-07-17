@@ -2,15 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerController : MonoBehaviour
 {
     MovementController movementController;
+    EnemyController enemyController;
 
     public SpriteRenderer sprite;
     public Animator animator;
+
+    public GameManager gameManager;
     // Start is called before the first frame update
     void Awake()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        enemyController=GetComponent<EnemyController>();
         sprite = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponentInChildren<Animator>();
         movementController = GetComponent<MovementController>();
@@ -61,4 +67,6 @@ public class PlayerController : MonoBehaviour
         sprite.flipY = flipY;
         sprite.flipX = flipX;
     }
+
+      
 }

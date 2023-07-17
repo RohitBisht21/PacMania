@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject rightWarpNode;
     public AudioSource munch1;
     public AudioSource munch2;
+    public AudioSource death;
     public int currentMunch;
 
     public int score;
@@ -60,5 +62,7 @@ public class GameManager : MonoBehaviour
             currentMunch = 0;
         }
         AddToScore(10); 
+        Scoremanager.scoreCount+=10;
     }
+  
 }

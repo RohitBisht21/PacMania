@@ -183,7 +183,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &840525
 MonoBehaviour:
@@ -283,7 +282,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &7018717
 MonoBehaviour:
@@ -524,7 +522,7 @@ Transform:
   m_Children:
   - {fileID: 679340625}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 277
+  m_RootOrder: 281
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &19382370
 MonoBehaviour:
@@ -551,7 +549,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &19382371
 MonoBehaviour:
@@ -735,7 +732,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &21217388
 MonoBehaviour:
@@ -775,6 +771,90 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.10747236, y: 0.130068}
   m_EdgeRadius: 0
+--- !u!1 &24489121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 24489122}
+  - component: {fileID: 24489123}
+  m_Layer: 0
+  m_Name: Eyes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &24489122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24489121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2036297632}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &24489123
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24489121}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1414141963
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: d703b8eb00219d547b53bec11e1f3036, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.5, y: 0.75}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &26259613
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +972,7 @@ Transform:
   m_Children:
   - {fileID: 1345510799}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 251
+  m_RootOrder: 253
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &29175419
 MonoBehaviour:
@@ -919,7 +999,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &29175420
 MonoBehaviour:
@@ -1019,7 +1098,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &33637451
 MonoBehaviour:
@@ -1203,7 +1281,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &45366928
 MonoBehaviour:
@@ -1303,7 +1380,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &48007979
 MonoBehaviour:
@@ -1403,7 +1479,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &49680827
 MonoBehaviour:
@@ -1947,8 +2022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3b98c6b9820c7448a95e7297e11c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ghostNodesState: 2
-  respawnState: 0
+  ghostNodesState: 0
   ghostType: 0
   ghostNodeLeft: {fileID: 2094130967}
   ghostNodeRight: {fileID: 640909903}
@@ -1956,9 +2030,8 @@ MonoBehaviour:
   ghostNodeStart: {fileID: 1672235359}
   movementController: {fileID: 0}
   startingNode: {fileID: 0}
-  ReadyToLeaveHome: 1
+  readyToLeaveHome: 0
   gameManager: {fileID: 0}
-  testRespawn: 1
 --- !u!4 &67099183
 Transform:
   m_ObjectHideFlags: 0
@@ -1967,7 +2040,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67099179}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.038, y: 1.24, z: 0}
+  m_LocalPosition: {x: 0, y: 1.213, z: 0}
   m_LocalScale: {x: 0.16669594, y: 0.1730612, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1988,7 +2061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentNode: {fileID: 0}
-  speed: 2
+  speed: 3
   direction: 
   lastMovngDirection: 
   gameManager: {fileID: 0}
@@ -2004,10 +2077,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.036679745, y: -0.052996665}
+  m_Offset: {x: -0.0151360035, y: -0.04373759}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2018,7 +2091,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5864773, y: 1.2873869}
+  m_Size: {x: 1.5853775, y: 1.4293567}
   m_EdgeRadius: 0
 --- !u!1 &72239908
 GameObject:
@@ -2164,7 +2237,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &83906939
 MonoBehaviour:
@@ -2321,7 +2393,7 @@ Transform:
   m_Children:
   - {fileID: 72239909}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 271
+  m_RootOrder: 275
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &89885339
 MonoBehaviour:
@@ -2348,7 +2420,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &89885340
 MonoBehaviour:
@@ -2448,7 +2519,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &90531739
 MonoBehaviour:
@@ -2632,7 +2702,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &92606044
 MonoBehaviour:
@@ -2789,7 +2858,7 @@ Transform:
   m_Children:
   - {fileID: 86346811}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 244
+  m_RootOrder: 246
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &103284924
 MonoBehaviour:
@@ -2816,7 +2885,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &103284925
 MonoBehaviour:
@@ -3000,7 +3068,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &110584904
 MonoBehaviour:
@@ -3183,7 +3250,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &117266942
 MonoBehaviour:
@@ -3367,7 +3433,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &118116716
 MonoBehaviour:
@@ -3467,7 +3532,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &119053111
 MonoBehaviour:
@@ -3567,7 +3631,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &120289289
 MonoBehaviour:
@@ -3667,7 +3730,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &122197707
 MonoBehaviour:
@@ -3935,7 +3997,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &124612439
 MonoBehaviour:
@@ -4119,7 +4180,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &127417778
 MonoBehaviour:
@@ -4219,7 +4279,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &130851825
 MonoBehaviour:
@@ -4319,7 +4378,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &131899200
 MonoBehaviour:
@@ -4419,7 +4477,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &132536946
 MonoBehaviour:
@@ -4771,7 +4828,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &138325307
 MonoBehaviour:
@@ -4844,7 +4900,7 @@ Transform:
   m_Children:
   - {fileID: 1520281432}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 237
+  m_RootOrder: 239
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &141296999
 MonoBehaviour:
@@ -4871,7 +4927,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &141297000
 MonoBehaviour:
@@ -5055,7 +5110,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &147562953
 MonoBehaviour:
@@ -5884,7 +5938,7 @@ Transform:
   m_Children:
   - {fileID: 1252477551}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 256
+  m_RootOrder: 258
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &199980436
 MonoBehaviour:
@@ -5911,7 +5965,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &199980437
 MonoBehaviour:
@@ -5984,7 +6037,7 @@ Transform:
   m_Children:
   - {fileID: 1374125566}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 236
+  m_RootOrder: 238
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &205145704
 MonoBehaviour:
@@ -6011,7 +6064,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &205145705
 MonoBehaviour:
@@ -6084,7 +6136,7 @@ Transform:
   m_Children:
   - {fileID: 1906253008}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 255
+  m_RootOrder: 257
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &209073640
 MonoBehaviour:
@@ -6111,7 +6163,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &209073641
 MonoBehaviour:
@@ -6211,7 +6262,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &222714912
 MonoBehaviour:
@@ -6395,7 +6445,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &232344266
 MonoBehaviour:
@@ -6495,7 +6544,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &233662176
 MonoBehaviour:
@@ -6679,7 +6727,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &248409239
 MonoBehaviour:
@@ -6863,7 +6910,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &248799387
 MonoBehaviour:
@@ -7272,7 +7318,7 @@ Transform:
   m_Children:
   - {fileID: 548546314}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 279
+  m_RootOrder: 283
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &265602277
 MonoBehaviour:
@@ -7299,7 +7345,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &265602278
 MonoBehaviour:
@@ -7399,7 +7444,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &265768042
 MonoBehaviour:
@@ -7499,7 +7543,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &268773298
 MonoBehaviour:
@@ -7683,7 +7726,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &272990699
 MonoBehaviour:
@@ -7783,7 +7825,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &278343988
 MonoBehaviour:
@@ -7883,7 +7924,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &280200353
 MonoBehaviour:
@@ -8040,7 +8080,7 @@ Transform:
   m_Children:
   - {fileID: 1974440811}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 233
+  m_RootOrder: 235
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &286666116
 MonoBehaviour:
@@ -8067,7 +8107,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &286666117
 MonoBehaviour:
@@ -8167,7 +8206,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &288862801
 MonoBehaviour:
@@ -8771,7 +8809,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &319436133
 MonoBehaviour:
@@ -8955,7 +8992,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &323990796
 MonoBehaviour:
@@ -9055,7 +9091,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &327656944
 MonoBehaviour:
@@ -9323,7 +9358,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &333984062
 MonoBehaviour:
@@ -9675,7 +9709,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &355278129
 MonoBehaviour:
@@ -9748,7 +9781,7 @@ Transform:
   m_Children:
   - {fileID: 2020731836}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 270
+  m_RootOrder: 274
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &356613297
 MonoBehaviour:
@@ -9775,7 +9808,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &356613298
 MonoBehaviour:
@@ -9875,7 +9907,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &359969809
 MonoBehaviour:
@@ -9975,7 +10006,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &364224997
 MonoBehaviour:
@@ -10075,7 +10105,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &364974549
 MonoBehaviour:
@@ -10484,7 +10513,7 @@ Transform:
   m_Children:
   - {fileID: 1047253278}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 276
+  m_RootOrder: 280
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &400821412
 MonoBehaviour:
@@ -10511,7 +10540,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &400821413
 MonoBehaviour:
@@ -10695,7 +10723,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &402564763
 MonoBehaviour:
@@ -10768,7 +10795,7 @@ Transform:
   m_Children:
   - {fileID: 352757886}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 230
+  m_RootOrder: 231
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &403241371
 MonoBehaviour:
@@ -10795,7 +10822,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &403241372
 MonoBehaviour:
@@ -10979,7 +11005,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &417311899
 MonoBehaviour:
@@ -11052,7 +11077,7 @@ Transform:
   m_Children:
   - {fileID: 622157795}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 253
+  m_RootOrder: 255
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &418482085
 MonoBehaviour:
@@ -11079,7 +11104,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &418482086
 MonoBehaviour:
@@ -11320,7 +11344,7 @@ Transform:
   m_Children:
   - {fileID: 178694828}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 278
+  m_RootOrder: 282
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &432409616
 MonoBehaviour:
@@ -11347,7 +11371,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &432409617
 MonoBehaviour:
@@ -11615,7 +11638,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &436434595
 MonoBehaviour:
@@ -11715,7 +11737,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &439208931
 MonoBehaviour:
@@ -11815,7 +11836,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &443994361
 MonoBehaviour:
@@ -11915,7 +11935,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &444688315
 MonoBehaviour:
@@ -12240,7 +12259,7 @@ Transform:
   m_Children:
   - {fileID: 1187049386}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 232
+  m_RootOrder: 234
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &467685815
 MonoBehaviour:
@@ -12267,7 +12286,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &467685816
 MonoBehaviour:
@@ -12703,7 +12721,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &489186978
 MonoBehaviour:
@@ -12803,7 +12820,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &491646633
 MonoBehaviour:
@@ -13743,7 +13759,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &523801850
 MonoBehaviour:
@@ -13843,7 +13858,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &534811006
 MonoBehaviour:
@@ -14447,7 +14461,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &552627387
 MonoBehaviour:
@@ -14715,7 +14728,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &563221722
 MonoBehaviour:
@@ -14899,7 +14911,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &576422489
 MonoBehaviour:
@@ -14999,7 +15010,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &580488306
 MonoBehaviour:
@@ -15072,7 +15082,7 @@ Transform:
   m_Children:
   - {fileID: 187995817}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 243
+  m_RootOrder: 245
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &584407214
 MonoBehaviour:
@@ -15099,7 +15109,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &584407215
 MonoBehaviour:
@@ -15199,7 +15208,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &592997957
 MonoBehaviour:
@@ -15283,7 +15291,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &594255902
 MonoBehaviour:
@@ -15398,7 +15405,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &597616939
 MonoBehaviour:
@@ -15606,90 +15612,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &608458101
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 608458102}
-  - component: {fileID: 608458103}
-  m_Layer: 0
-  m_Name: Eyes
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &608458102
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608458101}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1939623562}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &608458103
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608458101}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1414141963
-  m_SortingLayer: 4
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d703b8eb00219d547b53bec11e1f3036, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.5, y: 0.75}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &613870773
 GameObject:
   m_ObjectHideFlags: 0
@@ -15723,7 +15645,7 @@ Transform:
   m_Children:
   - {fileID: 867616811}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 280
+  m_RootOrder: 284
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &613870775
 MonoBehaviour:
@@ -15750,7 +15672,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &613870776
 MonoBehaviour:
@@ -16102,7 +16023,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &619932837
 MonoBehaviour:
@@ -16202,7 +16122,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &620498671
 MonoBehaviour:
@@ -16443,7 +16362,7 @@ Transform:
   m_Children:
   - {fileID: 876174207}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 229
+  m_RootOrder: 230
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &621857584
 MonoBehaviour:
@@ -16470,7 +16389,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &621857585
 MonoBehaviour:
@@ -16654,7 +16572,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &622424610
 MonoBehaviour:
@@ -16838,7 +16755,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &632870087
 MonoBehaviour:
@@ -16988,7 +16904,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640909903}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.427, y: 0.302, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -17022,7 +16938,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &640909906
 MonoBehaviour:
@@ -17122,7 +17037,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &651652081
 MonoBehaviour:
@@ -17222,7 +17136,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &654891608
 MonoBehaviour:
@@ -17322,7 +17235,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &660160573
 MonoBehaviour:
@@ -17479,7 +17391,7 @@ Transform:
   m_Children:
   - {fileID: 1278131160}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 260
+  m_RootOrder: 262
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &662282010
 MonoBehaviour:
@@ -17506,7 +17418,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &662282011
 MonoBehaviour:
@@ -17606,7 +17517,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &663448545
 MonoBehaviour:
@@ -17958,7 +17868,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &672454139
 MonoBehaviour:
@@ -18058,7 +17967,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &673617306
 MonoBehaviour:
@@ -18242,7 +18150,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &678713555
 MonoBehaviour:
@@ -18426,7 +18333,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &682144996
 MonoBehaviour:
@@ -18525,7 +18431,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &686980425
 MonoBehaviour:
@@ -18625,7 +18530,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &689946794
 MonoBehaviour:
@@ -18725,7 +18629,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &696683720
 MonoBehaviour:
@@ -18825,7 +18728,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &703870685
 MonoBehaviour:
@@ -19009,7 +18911,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &708631376
 MonoBehaviour:
@@ -19418,7 +19319,7 @@ Transform:
   m_Children:
   - {fileID: 2087905853}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 254
+  m_RootOrder: 256
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &744835015
 MonoBehaviour:
@@ -19445,7 +19346,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &744835016
 MonoBehaviour:
@@ -19544,7 +19444,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &747793614
 MonoBehaviour:
@@ -19896,7 +19795,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &757543282
 MonoBehaviour:
@@ -19996,7 +19894,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &761349686
 MonoBehaviour:
@@ -20096,7 +19993,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &769757585
 MonoBehaviour:
@@ -20196,7 +20092,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &773550712
 MonoBehaviour:
@@ -20236,163 +20131,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.10747236, y: 0.130068}
   m_EdgeRadius: 0
---- !u!1 &773591495
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 773591500}
-  - component: {fileID: 773591499}
-  - component: {fileID: 773591498}
-  - component: {fileID: 773591497}
-  - component: {fileID: 773591496}
-  m_Layer: 0
-  m_Name: Pink
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &773591496
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773591495}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.036679745, y: -0.052996665}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.1, y: 2.1}
-    newSize: {x: 2.1, y: 2.1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.5864773, y: 1.2873869}
-  m_EdgeRadius: 0
---- !u!114 &773591497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773591495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62bcd59fdd44c3944be7241533212fd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentNode: {fileID: 0}
-  speed: 2
-  direction: 
-  lastMovngDirection: 
-  gameManager: {fileID: 0}
-  canWarp: 1
-  isGhost: 1
---- !u!212 &773591498
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773591495}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -978211199
-  m_SortingLayer: 3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c36cd2baec1eec24086076cf142a8f6f, type: 3}
-  m_Color: {r: 0.98039216, g: 0.5568628, b: 0.88235295, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 2.1, y: 2.1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!114 &773591499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773591495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be3b98c6b9820c7448a95e7297e11c2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ghostNodesState: 2
-  respawnState: 3
-  ghostType: 2
-  ghostNodeLeft: {fileID: 2094130967}
-  ghostNodeRight: {fileID: 640909903}
-  ghostNodeCenter: {fileID: 1541417504}
-  ghostNodeStart: {fileID: 1672235359}
-  movementController: {fileID: 0}
-  startingNode: {fileID: 0}
-  ReadyToLeaveHome: 1
-  gameManager: {fileID: 0}
-  testRespawn: 0
---- !u!4 &773591500
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773591495}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.299, z: 0}
-  m_LocalScale: {x: 0.16669594, y: 0.1730612, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1289580487}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &776158850
 GameObject:
   m_ObjectHideFlags: 0
@@ -20873,7 +20611,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &792657844
 MonoBehaviour:
@@ -21057,7 +20794,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &797920689
 MonoBehaviour:
@@ -21493,7 +21229,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &815424033
 MonoBehaviour:
@@ -21566,7 +21301,7 @@ Transform:
   m_Children:
   - {fileID: 1428883281}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 245
+  m_RootOrder: 247
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &817049447
 MonoBehaviour:
@@ -21593,7 +21328,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &817049448
 MonoBehaviour:
@@ -21693,7 +21427,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &817569396
 MonoBehaviour:
@@ -21793,7 +21526,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &822857334
 MonoBehaviour:
@@ -22061,7 +21793,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &842301573
 MonoBehaviour:
@@ -22114,7 +21845,7 @@ GameObject:
   - component: {fileID: 847765639}
   - component: {fileID: 847765638}
   m_Layer: 0
-  m_Name: 2
+  m_Name: Node
   m_TagString: Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22134,7 +21865,7 @@ Transform:
   m_Children:
   - {fileID: 316519777}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 285
+  m_RootOrder: 233
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &847765638
 MonoBehaviour:
@@ -22161,7 +21892,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &847765639
 MonoBehaviour:
@@ -22429,7 +22159,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &856615089
 MonoBehaviour:
@@ -22529,7 +22258,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &857620534
 MonoBehaviour:
@@ -22602,7 +22330,7 @@ Transform:
   m_Children:
   - {fileID: 1704439606}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 248
+  m_RootOrder: 250
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &858759733
 MonoBehaviour:
@@ -22629,7 +22357,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &858759734
 MonoBehaviour:
@@ -23166,7 +22893,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &879813608
 MonoBehaviour:
@@ -23374,6 +23100,161 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &890185872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 890185876}
+  - component: {fileID: 890185875}
+  - component: {fileID: 890185874}
+  - component: {fileID: 890185873}
+  - component: {fileID: 890185877}
+  m_Layer: 0
+  m_Name: Pink
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &890185873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890185872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62bcd59fdd44c3944be7241533212fd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentNode: {fileID: 0}
+  speed: 2
+  direction: 
+  lastMovngDirection: 
+  gameManager: {fileID: 0}
+  canWarp: 1
+  isGhost: 1
+--- !u!212 &890185874
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890185872}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -978211199
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c36cd2baec1eec24086076cf142a8f6f, type: 3}
+  m_Color: {r: 0.98039216, g: 0, b: 0.7670669, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.1, y: 2.1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &890185875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890185872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be3b98c6b9820c7448a95e7297e11c2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostNodesState: 0
+  ghostType: 2
+  ghostNodeLeft: {fileID: 2094130967}
+  ghostNodeRight: {fileID: 640909903}
+  ghostNodeCenter: {fileID: 1541417504}
+  ghostNodeStart: {fileID: 1672235359}
+  movementController: {fileID: 0}
+  startingNode: {fileID: 0}
+  readyToLeaveHome: 0
+  gameManager: {fileID: 0}
+--- !u!4 &890185876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890185872}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.31, z: 0}
+  m_LocalScale: {x: 0.16669594, y: 0.1730612, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1963011211}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &890185877
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890185872}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.030271798, y: -0.029157996}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.1, y: 2.1}
+    newSize: {x: 2.1, y: 2.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5551052, y: 1.4585121}
+  m_EdgeRadius: 0
 --- !u!1 &894695983
 GameObject:
   m_ObjectHideFlags: 0
@@ -23458,6 +23339,161 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &897353672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 897353676}
+  - component: {fileID: 897353675}
+  - component: {fileID: 897353674}
+  - component: {fileID: 897353673}
+  - component: {fileID: 897353677}
+  m_Layer: 0
+  m_Name: Blue
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &897353673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897353672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62bcd59fdd44c3944be7241533212fd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentNode: {fileID: 0}
+  speed: 2
+  direction: 
+  lastMovngDirection: 
+  gameManager: {fileID: 0}
+  canWarp: 1
+  isGhost: 1
+--- !u!212 &897353674
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897353672}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -978211199
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c36cd2baec1eec24086076cf142a8f6f, type: 3}
+  m_Color: {r: 0, g: 0.7764709, b: 0.98039216, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.1, y: 2.1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &897353675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897353672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be3b98c6b9820c7448a95e7297e11c2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostNodesState: 0
+  ghostType: 1
+  ghostNodeLeft: {fileID: 2094130967}
+  ghostNodeRight: {fileID: 640909903}
+  ghostNodeCenter: {fileID: 1541417504}
+  ghostNodeStart: {fileID: 1672235359}
+  movementController: {fileID: 0}
+  startingNode: {fileID: 0}
+  readyToLeaveHome: 0
+  gameManager: {fileID: 0}
+--- !u!4 &897353676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897353672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.494, y: 0.302, z: 0}
+  m_LocalScale: {x: 0.16669594, y: 0.1730612, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1225745855}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &897353677
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897353672}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.015136123, y: -0.020776689}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.1, y: 2.1}
+    newSize: {x: 2.1, y: 2.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4642894, y: 1.4752766}
+  m_EdgeRadius: 0
 --- !u!1 &908404989
 GameObject:
   m_ObjectHideFlags: 0
@@ -23685,7 +23721,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &917569576
 MonoBehaviour:
@@ -23758,7 +23793,7 @@ Transform:
   m_Children:
   - {fileID: 1010357959}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 257
+  m_RootOrder: 259
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &919169979
 MonoBehaviour:
@@ -23785,7 +23820,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &919169980
 MonoBehaviour:
@@ -23885,7 +23919,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &920997975
 MonoBehaviour:
@@ -23984,7 +24017,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &929696453
 MonoBehaviour:
@@ -24084,7 +24116,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &931587237
 MonoBehaviour:
@@ -24157,7 +24188,7 @@ Transform:
   m_Children:
   - {fileID: 809896008}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 268
+  m_RootOrder: 271
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &942083269
 MonoBehaviour:
@@ -24184,7 +24215,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &942083270
 MonoBehaviour:
@@ -24341,7 +24371,7 @@ Transform:
   m_Children:
   - {fileID: 252994068}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 275
+  m_RootOrder: 279
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &950206033
 MonoBehaviour:
@@ -24368,7 +24398,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &950206034
 MonoBehaviour:
@@ -24468,7 +24497,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &950932448
 MonoBehaviour:
@@ -24625,7 +24653,7 @@ Transform:
   m_Children:
   - {fileID: 51075903}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 238
+  m_RootOrder: 240
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &957120920
 MonoBehaviour:
@@ -24652,7 +24680,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &957120921
 MonoBehaviour:
@@ -24752,7 +24779,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &962604144
 MonoBehaviour:
@@ -24936,7 +24962,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &966378173
 MonoBehaviour:
@@ -25009,7 +25034,7 @@ Transform:
   m_Children:
   - {fileID: 2117450665}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 239
+  m_RootOrder: 241
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &973084592
 MonoBehaviour:
@@ -25036,7 +25061,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &973084593
 MonoBehaviour:
@@ -25136,7 +25160,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &982103247
 MonoBehaviour:
@@ -25236,7 +25259,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &985531887
 MonoBehaviour:
@@ -25477,7 +25499,7 @@ Transform:
   m_Children:
   - {fileID: 1671430729}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 269
+  m_RootOrder: 273
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &989221865
 MonoBehaviour:
@@ -25504,7 +25526,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &989221866
 MonoBehaviour:
@@ -25772,7 +25793,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &996506976
 MonoBehaviour:
@@ -26069,9 +26089,11 @@ Transform:
   - {fileID: 1929714263}
   - {fileID: 120289287}
   - {fileID: 119053109}
+  - {fileID: 1517170600}
   - {fileID: 621857583}
   - {fileID: 403241370}
   - {fileID: 1779398378}
+  - {fileID: 847765637}
   - {fileID: 467685814}
   - {fileID: 286666115}
   - {fileID: 1731227057}
@@ -26106,9 +26128,11 @@ Transform:
   - {fileID: 1943779694}
   - {fileID: 2099664029}
   - {fileID: 1105588663}
+  - {fileID: 1274249736}
   - {fileID: 1943749327}
   - {fileID: 1939743599}
   - {fileID: 942083268}
+  - {fileID: 1394074160}
   - {fileID: 989221864}
   - {fileID: 356613296}
   - {fileID: 89885338}
@@ -26124,10 +26148,6 @@ Transform:
   - {fileID: 1455369923}
   - {fileID: 1352201725}
   - {fileID: 1742528280}
-  - {fileID: 1517170600}
-  - {fileID: 847765637}
-  - {fileID: 1394074160}
-  - {fileID: 1274249736}
   m_Father: {fileID: 1890701266}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26191,7 +26211,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1008293141
 MonoBehaviour:
@@ -26711,7 +26730,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1028932332
 MonoBehaviour:
@@ -26862,7 +26880,7 @@ RectTransform:
   m_GameObject: {fileID: 1034067639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 866526648}
@@ -26871,7 +26889,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 412.9, y: 513.8}
+  m_SizeDelta: {x: 372.2, y: 486.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1034067641
 MonoBehaviour:
@@ -26975,7 +26993,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1040556343
 MonoBehaviour:
@@ -27242,7 +27259,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1046716786
 MonoBehaviour:
@@ -27399,7 +27415,7 @@ Transform:
   m_Children:
   - {fileID: 1817675091}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 259
+  m_RootOrder: 261
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1052150203
 MonoBehaviour:
@@ -27426,7 +27442,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1052150204
 MonoBehaviour:
@@ -27526,7 +27541,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1053963566
 MonoBehaviour:
@@ -27710,7 +27724,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1065201853
 MonoBehaviour:
@@ -27810,7 +27823,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1069520777
 MonoBehaviour:
@@ -27910,7 +27922,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1069914570
 MonoBehaviour:
@@ -28178,7 +28189,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1086631841
 MonoBehaviour:
@@ -28251,7 +28261,7 @@ Transform:
   m_Children:
   - {fileID: 1744900939}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 265
+  m_RootOrder: 267
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1105588664
 MonoBehaviour:
@@ -28278,7 +28288,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1105588665
 MonoBehaviour:
@@ -28630,7 +28639,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1135718694
 MonoBehaviour:
@@ -28730,7 +28738,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1139451453
 MonoBehaviour:
@@ -28830,7 +28837,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1145089320
 MonoBehaviour:
@@ -28930,7 +28936,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1147133775
 MonoBehaviour:
@@ -29030,7 +29035,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1149659025
 MonoBehaviour:
@@ -29130,7 +29134,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1154469033
 MonoBehaviour:
@@ -29566,7 +29569,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1177080137
 MonoBehaviour:
@@ -29834,7 +29836,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1191395880
 MonoBehaviour:
@@ -30102,7 +30103,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1196312438
 MonoBehaviour:
@@ -30286,7 +30286,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1199410618
 MonoBehaviour:
@@ -30386,7 +30385,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1200731167
 MonoBehaviour:
@@ -30486,7 +30484,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1215347410
 MonoBehaviour:
@@ -30586,7 +30583,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1218648766
 MonoBehaviour:
@@ -30794,6 +30790,90 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1225745854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1225745855}
+  - component: {fileID: 1225745856}
+  m_Layer: 0
+  m_Name: Eyes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1225745855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225745854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 897353676}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1225745856
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225745854}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1414141963
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: d703b8eb00219d547b53bec11e1f3036, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.5, y: 0.75}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1227350878
 GameObject:
   m_ObjectHideFlags: 0
@@ -30854,7 +30934,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1227350881
 MonoBehaviour:
@@ -30954,7 +31033,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1228882485
 MonoBehaviour:
@@ -31138,7 +31216,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1230028600
 MonoBehaviour:
@@ -31238,7 +31315,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1230143426
 MonoBehaviour:
@@ -31590,7 +31666,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1244492328
 MonoBehaviour:
@@ -31774,7 +31849,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1250225009
 MonoBehaviour:
@@ -32462,7 +32536,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1269720455
 MonoBehaviour:
@@ -32562,7 +32635,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1274070348
 MonoBehaviour:
@@ -32615,7 +32687,7 @@ GameObject:
   - component: {fileID: 1274249738}
   - component: {fileID: 1274249737}
   m_Layer: 0
-  m_Name: 4
+  m_Name: Node
   m_TagString: Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32635,7 +32707,7 @@ Transform:
   m_Children:
   - {fileID: 1232358677}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 287
+  m_RootOrder: 268
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1274249737
 MonoBehaviour:
@@ -32662,7 +32734,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1274249738
 MonoBehaviour:
@@ -32762,7 +32833,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1277273177
 MonoBehaviour:
@@ -32946,7 +33016,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1278424413
 MonoBehaviour:
@@ -33046,7 +33115,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1281969127
 MonoBehaviour:
@@ -33268,92 +33336,7 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
---- !u!1 &1289580486
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1289580487}
-  - component: {fileID: 1289580488}
-  m_Layer: 0
-  m_Name: Eyes
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1289580487
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289580486}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 773591500}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1289580488
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289580486}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1414141963
-  m_SortingLayer: 4
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d703b8eb00219d547b53bec11e1f3036, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.5, y: 0.75}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1295307142
 GameObject:
   m_ObjectHideFlags: 0
@@ -33555,7 +33538,7 @@ Transform:
   m_Children:
   - {fileID: 188236945}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 242
+  m_RootOrder: 244
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1297328287
 MonoBehaviour:
@@ -33582,7 +33565,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1297328288
 MonoBehaviour:
@@ -33850,7 +33832,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1309241209
 MonoBehaviour:
@@ -34034,7 +34015,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1314809896
 MonoBehaviour:
@@ -34134,7 +34114,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1318689427
 MonoBehaviour:
@@ -34318,7 +34297,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1332113114
 MonoBehaviour:
@@ -34502,7 +34480,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1345184208
 MonoBehaviour:
@@ -34601,7 +34578,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1345344110
 MonoBehaviour:
@@ -34842,7 +34818,7 @@ Transform:
   m_Children:
   - {fileID: 782858432}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 282
+  m_RootOrder: 286
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1352201726
 MonoBehaviour:
@@ -34869,7 +34845,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1352201727
 MonoBehaviour:
@@ -34969,7 +34944,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1352951070
 MonoBehaviour:
@@ -35069,7 +35043,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1359089029
 MonoBehaviour:
@@ -35168,7 +35141,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1361451679
 MonoBehaviour:
@@ -35436,7 +35408,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1381285163
 MonoBehaviour:
@@ -35536,7 +35507,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1381684796
 MonoBehaviour:
@@ -35636,7 +35606,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1383295465
 MonoBehaviour:
@@ -35820,7 +35789,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1386254559
 MonoBehaviour:
@@ -35893,7 +35861,7 @@ Transform:
   m_Children:
   - {fileID: 992669610}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 235
+  m_RootOrder: 237
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1392870022
 MonoBehaviour:
@@ -35920,7 +35888,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1392870023
 MonoBehaviour:
@@ -36020,7 +35987,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1392902491
 MonoBehaviour:
@@ -36073,7 +36039,7 @@ GameObject:
   - component: {fileID: 1394074162}
   - component: {fileID: 1394074161}
   m_Layer: 0
-  m_Name: 3
+  m_Name: Node
   m_TagString: Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36093,7 +36059,7 @@ Transform:
   m_Children:
   - {fileID: 1303206706}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 286
+  m_RootOrder: 272
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1394074161
 MonoBehaviour:
@@ -36120,7 +36086,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1394074162
 MonoBehaviour:
@@ -36220,7 +36185,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1396883235
 MonoBehaviour:
@@ -36320,7 +36284,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1399219030
 MonoBehaviour:
@@ -36588,7 +36551,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1410106948
 MonoBehaviour:
@@ -36661,7 +36623,7 @@ Transform:
   m_Children:
   - {fileID: 1872912048}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 272
+  m_RootOrder: 276
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1421290833
 MonoBehaviour:
@@ -36688,7 +36650,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1421290834
 MonoBehaviour:
@@ -36872,7 +36833,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1433775559
 MonoBehaviour:
@@ -37365,7 +37325,7 @@ Transform:
   m_Children:
   - {fileID: 1469736770}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 281
+  m_RootOrder: 285
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1455369924
 MonoBehaviour:
@@ -37392,7 +37352,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1455369925
 MonoBehaviour:
@@ -37576,7 +37535,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1462312834
 MonoBehaviour:
@@ -37714,7 +37672,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1463516209
 MonoBehaviour:
@@ -37787,7 +37744,7 @@ Transform:
   m_Children:
   - {fileID: 1915603214}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 250
+  m_RootOrder: 252
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1464870861
 MonoBehaviour:
@@ -37814,7 +37771,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1464870862
 MonoBehaviour:
@@ -38166,7 +38122,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1470366430
 MonoBehaviour:
@@ -38250,9 +38205,9 @@ MonoBehaviour:
   ghostNodeCenter: {fileID: 1541417504}
   ghostNodeStart: {fileID: 1672235359}
   redGhost: {fileID: 67099179}
-  pinkGhost: {fileID: 773591495}
-  blueGhost: {fileID: 1685921657}
-  orangeGhost: {fileID: 1939623557}
+  blueGhost: {fileID: 897353672}
+  pinkGhost: {fileID: 890185872}
+  OrangeGhost: {fileID: 2036297628}
 --- !u!4 &1482349190
 Transform:
   m_ObjectHideFlags: 0
@@ -38520,7 +38475,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1483047310
 MonoBehaviour:
@@ -38658,7 +38612,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1485962477
 MonoBehaviour:
@@ -38731,7 +38684,7 @@ Transform:
   m_Children:
   - {fileID: 172475733}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 274
+  m_RootOrder: 278
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1487695942
 MonoBehaviour:
@@ -38758,7 +38711,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1487695943
 MonoBehaviour:
@@ -38942,7 +38894,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1494836332
 MonoBehaviour:
@@ -39194,7 +39145,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1504810254
 MonoBehaviour:
@@ -39351,7 +39301,7 @@ Transform:
   m_Children:
   - {fileID: 2009630223}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 262
+  m_RootOrder: 264
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1509316941
 MonoBehaviour:
@@ -39378,7 +39328,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1509316942
 MonoBehaviour:
@@ -39562,7 +39511,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1511537226
 MonoBehaviour:
@@ -39662,7 +39610,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1512871095
 MonoBehaviour:
@@ -39715,7 +39662,7 @@ GameObject:
   - component: {fileID: 1517170602}
   - component: {fileID: 1517170601}
   m_Layer: 0
-  m_Name: 1
+  m_Name: Node
   m_TagString: Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39735,7 +39682,7 @@ Transform:
   m_Children:
   - {fileID: 99994290}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 284
+  m_RootOrder: 229
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1517170601
 MonoBehaviour:
@@ -39762,7 +39709,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1517170602
 MonoBehaviour:
@@ -39862,7 +39808,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1519891482
 MonoBehaviour:
@@ -40298,7 +40243,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1528405125
 MonoBehaviour:
@@ -40623,7 +40567,7 @@ Transform:
   m_Children:
   - {fileID: 1946453433}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 273
+  m_RootOrder: 277
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1534807539
 MonoBehaviour:
@@ -40650,7 +40594,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1534807540
 MonoBehaviour:
@@ -40734,7 +40677,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 1
   gameManager: {fileID: 0}
 --- !u!114 &1541417506
 MonoBehaviour:
@@ -41018,7 +40960,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1553283073
 MonoBehaviour:
@@ -41202,7 +41143,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1556344027
 MonoBehaviour:
@@ -41302,7 +41242,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1558862022
 MonoBehaviour:
@@ -41570,7 +41509,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1572518508
 MonoBehaviour:
@@ -41754,7 +41692,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1588573794
 MonoBehaviour:
@@ -41854,7 +41791,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1595113345
 MonoBehaviour:
@@ -41954,7 +41890,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1611908865
 MonoBehaviour:
@@ -42138,7 +42073,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1616663990
 MonoBehaviour:
@@ -42238,7 +42172,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1620191092
 MonoBehaviour:
@@ -42338,7 +42271,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1620265733
 MonoBehaviour:
@@ -42438,7 +42370,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1630058876
 MonoBehaviour:
@@ -42538,7 +42469,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1633316544
 MonoBehaviour:
@@ -42638,7 +42568,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1649447226
 MonoBehaviour:
@@ -42990,7 +42919,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1661660782
 MonoBehaviour:
@@ -43090,7 +43018,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1665412789
 MonoBehaviour:
@@ -43190,7 +43117,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1669345037
 MonoBehaviour:
@@ -43442,7 +43368,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1672235361
 MonoBehaviour:
@@ -43558,7 +43483,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1675703271
 MonoBehaviour:
@@ -43682,163 +43606,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1685921657
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1685921662}
-  - component: {fileID: 1685921661}
-  - component: {fileID: 1685921660}
-  - component: {fileID: 1685921659}
-  - component: {fileID: 1685921658}
-  m_Layer: 0
-  m_Name: Blue
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1685921658
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685921657}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.036679745, y: -0.052996665}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.1, y: 2.1}
-    newSize: {x: 2.1, y: 2.1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.5864773, y: 1.2873869}
-  m_EdgeRadius: 0
---- !u!114 &1685921659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685921657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62bcd59fdd44c3944be7241533212fd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentNode: {fileID: 0}
-  speed: 2
-  direction: 
-  lastMovngDirection: 
-  gameManager: {fileID: 0}
-  canWarp: 1
-  isGhost: 1
---- !u!212 &1685921660
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685921657}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -978211199
-  m_SortingLayer: 3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c36cd2baec1eec24086076cf142a8f6f, type: 3}
-  m_Color: {r: 0.019607844, g: 0.98039216, b: 0.98039216, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 2.1, y: 2.1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!114 &1685921661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685921657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be3b98c6b9820c7448a95e7297e11c2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ghostNodesState: 1
-  respawnState: 3
-  ghostType: 1
-  ghostNodeLeft: {fileID: 2094130967}
-  ghostNodeRight: {fileID: 640909903}
-  ghostNodeCenter: {fileID: 1541417504}
-  ghostNodeStart: {fileID: 1672235359}
-  movementController: {fileID: 0}
-  startingNode: {fileID: 0}
-  ReadyToLeaveHome: 1
-  gameManager: {fileID: 0}
-  testRespawn: 0
---- !u!4 &1685921662
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685921657}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.52, y: 0.293, z: 0}
-  m_LocalScale: {x: 0.16669594, y: 0.1730612, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1987759445}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1693054747
 GameObject:
   m_ObjectHideFlags: 0
@@ -43899,7 +43666,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1693054750
 MonoBehaviour:
@@ -44257,7 +44023,7 @@ MonoBehaviour:
   speed: 5
   direction: 
   lastMovngDirection: 
-  gameManager: {fileID: 1482349189}
+  gameManager: {fileID: 0}
   canWarp: 1
   isGhost: 0
 --- !u!50 &1707131243
@@ -44367,7 +44133,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1714270235
 MonoBehaviour:
@@ -44551,7 +44316,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1720306832
 MonoBehaviour:
@@ -44624,7 +44388,7 @@ Transform:
   m_Children:
   - {fileID: 963057037}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 234
+  m_RootOrder: 236
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1731227058
 MonoBehaviour:
@@ -44651,7 +44415,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1731227059
 MonoBehaviour:
@@ -44751,7 +44514,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1738475734
 MonoBehaviour:
@@ -44851,7 +44613,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1739417969
 MonoBehaviour:
@@ -44924,7 +44685,7 @@ Transform:
   m_Children:
   - {fileID: 1193809316}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 283
+  m_RootOrder: 287
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1742528281
 MonoBehaviour:
@@ -44951,7 +44712,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1742528282
 MonoBehaviour:
@@ -45135,7 +44895,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1747800764
 MonoBehaviour:
@@ -45235,7 +44994,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1753700863
 MonoBehaviour:
@@ -45503,7 +45261,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1757949260
 MonoBehaviour:
@@ -45603,7 +45360,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1765318351
 MonoBehaviour:
@@ -45787,7 +45543,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1770776985
 MonoBehaviour:
@@ -45944,7 +45699,7 @@ Transform:
   m_Children:
   - {fileID: 1945890011}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 231
+  m_RootOrder: 232
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1779398379
 MonoBehaviour:
@@ -45971,7 +45726,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1779398380
 MonoBehaviour:
@@ -46044,7 +45798,7 @@ Transform:
   m_Children:
   - {fileID: 1615122971}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 247
+  m_RootOrder: 249
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1787150820
 MonoBehaviour:
@@ -46071,7 +45825,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1787150821
 MonoBehaviour:
@@ -46171,7 +45924,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1789049946
 MonoBehaviour:
@@ -46244,7 +45996,7 @@ Transform:
   m_Children:
   - {fileID: 1652418122}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 241
+  m_RootOrder: 243
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1793442452
 MonoBehaviour:
@@ -46271,7 +46023,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1793442453
 MonoBehaviour:
@@ -46455,7 +46206,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1802899299
 MonoBehaviour:
@@ -46639,7 +46389,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1811441646
 MonoBehaviour:
@@ -46712,7 +46461,7 @@ Transform:
   m_Children:
   - {fileID: 134180284}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 258
+  m_RootOrder: 260
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1813361413
 MonoBehaviour:
@@ -46739,7 +46488,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1813361414
 MonoBehaviour:
@@ -46923,7 +46671,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1818779801
 MonoBehaviour:
@@ -47191,7 +46938,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1823938449
 MonoBehaviour:
@@ -47375,7 +47121,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1828259222
 MonoBehaviour:
@@ -47473,7 +47218,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!61 &1839061374
 BoxCollider2D:
@@ -47561,7 +47305,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1841999991
 MonoBehaviour:
@@ -47661,7 +47404,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1848587225
 MonoBehaviour:
@@ -47761,7 +47503,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1848886662
 MonoBehaviour:
@@ -47834,7 +47575,7 @@ Transform:
   m_Children:
   - {fileID: 2046901320}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 252
+  m_RootOrder: 254
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1851351101
 MonoBehaviour:
@@ -47861,7 +47602,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1851351102
 MonoBehaviour:
@@ -47961,7 +47701,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1854225139
 MonoBehaviour:
@@ -48061,7 +47800,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1854381709
 MonoBehaviour:
@@ -48364,7 +48102,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1868902409
 MonoBehaviour:
@@ -48632,7 +48369,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1872069244
 MonoBehaviour:
@@ -48731,7 +48467,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1872213448
 MonoBehaviour:
@@ -48999,7 +48734,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1885504285
 MonoBehaviour:
@@ -49183,7 +48917,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1890058961
 MonoBehaviour:
@@ -49318,7 +49051,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1890837575
 MonoBehaviour:
@@ -49418,7 +49150,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1897198481
 MonoBehaviour:
@@ -49686,7 +49417,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1914841633
 MonoBehaviour:
@@ -50038,7 +49768,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1929714265
 MonoBehaviour:
@@ -50162,163 +49891,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1939623557
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1939623562}
-  - component: {fileID: 1939623561}
-  - component: {fileID: 1939623560}
-  - component: {fileID: 1939623559}
-  - component: {fileID: 1939623558}
-  m_Layer: 0
-  m_Name: Orange
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1939623558
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939623557}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.036679745, y: -0.052996665}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.1, y: 2.1}
-    newSize: {x: 2.1, y: 2.1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.5864773, y: 1.2873869}
-  m_EdgeRadius: 0
---- !u!114 &1939623559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939623557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62bcd59fdd44c3944be7241533212fd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentNode: {fileID: 0}
-  speed: 2
-  direction: 
-  lastMovngDirection: 
-  gameManager: {fileID: 0}
-  canWarp: 1
-  isGhost: 1
---- !u!212 &1939623560
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939623557}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -978211199
-  m_SortingLayer: 3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c36cd2baec1eec24086076cf142a8f6f, type: 3}
-  m_Color: {r: 0.98039216, g: 0.54509807, b: 0.05882353, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 2.1, y: 2.1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!114 &1939623561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939623557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be3b98c6b9820c7448a95e7297e11c2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ghostNodesState: 2
-  respawnState: 2
-  ghostType: 3
-  ghostNodeLeft: {fileID: 2094130967}
-  ghostNodeRight: {fileID: 640909903}
-  ghostNodeCenter: {fileID: 1541417504}
-  ghostNodeStart: {fileID: 1672235359}
-  movementController: {fileID: 0}
-  startingNode: {fileID: 0}
-  ReadyToLeaveHome: 1
-  gameManager: {fileID: 0}
-  testRespawn: 0
---- !u!4 &1939623562
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939623557}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.478, y: 0.293, z: 0}
-  m_LocalScale: {x: 0.16669594, y: 0.1730612, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 608458102}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1939743598
 GameObject:
   m_ObjectHideFlags: 0
@@ -50352,7 +49924,7 @@ Transform:
   m_Children:
   - {fileID: 536128550}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 267
+  m_RootOrder: 270
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1939743600
 MonoBehaviour:
@@ -50379,7 +49951,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1939743601
 MonoBehaviour:
@@ -50704,7 +50275,7 @@ Transform:
   m_Children:
   - {fileID: 1939474795}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 266
+  m_RootOrder: 269
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1943749328
 MonoBehaviour:
@@ -50731,7 +50302,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1943749329
 MonoBehaviour:
@@ -50804,7 +50374,7 @@ Transform:
   m_Children:
   - {fileID: 492671794}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 263
+  m_RootOrder: 265
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1943779695
 MonoBehaviour:
@@ -50831,7 +50401,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1943779696
 MonoBehaviour:
@@ -50931,7 +50500,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1945025413
 MonoBehaviour:
@@ -51004,7 +50572,7 @@ Transform:
   m_Children:
   - {fileID: 598738843}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 240
+  m_RootOrder: 242
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1945584691
 MonoBehaviour:
@@ -51031,7 +50599,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1945584692
 MonoBehaviour:
@@ -51299,7 +50866,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1951353950
 MonoBehaviour:
@@ -51398,7 +50964,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1952785186
 MonoBehaviour:
@@ -51438,6 +51003,90 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.10747236, y: 0.130068}
   m_EdgeRadius: 0
+--- !u!1 &1963011210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1963011211}
+  - component: {fileID: 1963011212}
+  m_Layer: 0
+  m_Name: Eyes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1963011211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963011210}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 890185876}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1963011212
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963011210}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1414141963
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: d703b8eb00219d547b53bec11e1f3036, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.5, y: 0.75}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1969504065
 GameObject:
   m_ObjectHideFlags: 0
@@ -51581,7 +51230,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1969522505
 MonoBehaviour:
@@ -51787,7 +51435,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1971824777
 MonoBehaviour:
@@ -52139,7 +51786,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1984146927
 MonoBehaviour:
@@ -52239,7 +51885,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1984848690
 MonoBehaviour:
@@ -52363,90 +52008,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1987759444
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1987759445}
-  - component: {fileID: 1987759446}
-  m_Layer: 0
-  m_Name: Eyes
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1987759445
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987759444}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1685921662}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1987759446
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987759444}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1414141963
-  m_SortingLayer: 4
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d703b8eb00219d547b53bec11e1f3036, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.5, y: 0.75}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1991745488
 GameObject:
   m_ObjectHideFlags: 0
@@ -52507,7 +52068,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1991745491
 MonoBehaviour:
@@ -52606,7 +52166,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &1991992587
 MonoBehaviour:
@@ -52706,7 +52265,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2001863709
 MonoBehaviour:
@@ -52806,7 +52364,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2005226299
 MonoBehaviour:
@@ -52906,7 +52463,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2005437932
 MonoBehaviour:
@@ -53006,7 +52562,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2007886889
 MonoBehaviour:
@@ -53106,7 +52661,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2009563372
 MonoBehaviour:
@@ -53289,7 +52843,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!61 &2010134348
 BoxCollider2D:
@@ -53461,7 +53014,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2012567784
 MonoBehaviour:
@@ -53813,7 +53365,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2022865059
 MonoBehaviour:
@@ -53913,7 +53464,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2030364515
 MonoBehaviour:
@@ -54013,7 +53563,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2030689683
 MonoBehaviour:
@@ -54113,7 +53662,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2033659829
 MonoBehaviour:
@@ -54213,7 +53761,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2034255258
 MonoBehaviour:
@@ -54337,6 +53884,161 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2036297628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2036297632}
+  - component: {fileID: 2036297631}
+  - component: {fileID: 2036297630}
+  - component: {fileID: 2036297629}
+  - component: {fileID: 2036297633}
+  m_Layer: 0
+  m_Name: Orange
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2036297629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036297628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62bcd59fdd44c3944be7241533212fd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentNode: {fileID: 0}
+  speed: 2
+  direction: 
+  lastMovngDirection: 
+  gameManager: {fileID: 0}
+  canWarp: 1
+  isGhost: 1
+--- !u!212 &2036297630
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036297628}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -978211199
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c36cd2baec1eec24086076cf142a8f6f, type: 3}
+  m_Color: {r: 0.98039216, g: 0.45661435, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.1, y: 2.1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &2036297631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036297628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be3b98c6b9820c7448a95e7297e11c2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostNodesState: 0
+  ghostType: 3
+  ghostNodeLeft: {fileID: 2094130967}
+  ghostNodeRight: {fileID: 640909903}
+  ghostNodeCenter: {fileID: 1541417504}
+  ghostNodeStart: {fileID: 1672235359}
+  movementController: {fileID: 0}
+  startingNode: {fileID: 0}
+  readyToLeaveHome: 0
+  gameManager: {fileID: 0}
+--- !u!4 &2036297632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036297628}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.499, y: 0.314, z: 0}
+  m_LocalScale: {x: 0.16669594, y: 0.1730612, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 24489122}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2036297633
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036297628}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.024126172, y: 0.00000008940697}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.1, y: 2.1}
+    newSize: {x: 2.1, y: 2.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5673974, y: 1.51683}
+  m_EdgeRadius: 0
 --- !u!1 &2040180262
 GameObject:
   m_ObjectHideFlags: 0
@@ -54397,7 +54099,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2040180265
 MonoBehaviour:
@@ -54581,7 +54282,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2043970858
 MonoBehaviour:
@@ -54681,7 +54381,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2044132751
 MonoBehaviour:
@@ -54754,7 +54453,7 @@ Transform:
   m_Children:
   - {fileID: 298343939}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 249
+  m_RootOrder: 251
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2045670566
 MonoBehaviour:
@@ -54781,7 +54480,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2045670567
 MonoBehaviour:
@@ -55133,7 +54831,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2059278728
 MonoBehaviour:
@@ -55317,7 +55014,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2066492590
 MonoBehaviour:
@@ -55501,7 +55197,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2068196495
 MonoBehaviour:
@@ -55768,7 +55463,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2084775890
 MonoBehaviour:
@@ -55868,7 +55562,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2085248720
 MonoBehaviour:
@@ -56204,7 +55897,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2094130969
 MonoBehaviour:
@@ -56293,7 +55985,7 @@ Transform:
   m_Children:
   - {fileID: 714217588}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 264
+  m_RootOrder: 266
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2099664030
 MonoBehaviour:
@@ -56320,7 +56012,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2099664031
 MonoBehaviour:
@@ -56504,7 +56195,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2104631975
 MonoBehaviour:
@@ -56604,7 +56294,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2108915378
 MonoBehaviour:
@@ -56929,7 +56618,7 @@ Transform:
   m_Children:
   - {fileID: 986836576}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 246
+  m_RootOrder: 248
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2124390968
 MonoBehaviour:
@@ -56956,7 +56645,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2124390969
 MonoBehaviour:
@@ -57224,7 +56912,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2136598895
 MonoBehaviour:
@@ -57297,7 +56984,7 @@ Transform:
   m_Children:
   - {fileID: 331029455}
   m_Father: {fileID: 1001909569}
-  m_RootOrder: 261
+  m_RootOrder: 263
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2137373381
 MonoBehaviour:
@@ -57324,7 +57011,6 @@ MonoBehaviour:
   isPelletNode: 0
   hasPelletNode: 0
   pelletSprite: {fileID: 0}
-  isGhostStartingNode: 0
   gameManager: {fileID: 0}
 --- !u!114 &2137373382
 MonoBehaviour:

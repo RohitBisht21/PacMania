@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class EnemyController : MonoBehaviour
 {
     public enum GhostNodesStatesEnum
@@ -34,41 +34,43 @@ public class EnemyController : MonoBehaviour
     public MovementController movementController;
 
     public GameObject startingNode;
-    public bool ReadyToLeaveHome = false;
+
+    public bool readyToLeaveHome = false;
 
     public GameManager gameManager;
 
     public bool testRespawn = false;
 
     // Start is called before the first frame update
+    public bool isVisible=true;
+    public SpriteRenderer ghostSprite;
+    public SpriteRenderer eyesSprite;
     void Awake()
     {
+        ghostSprite = GetComponent<SpriteRenderer>();
+        eyesSprite = GetComponentInChildren<SpriteRenderer>();
+
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         movementController = GetComponent<MovementController>();
         if (ghostType==GhostType.red)
         {
             ghostNodesState = GhostNodesStatesEnum.startNode;
             startingNode = ghostNodeStart;
-            respawnState = GhostNodesStatesEnum.centerNode;
-            ReadyToLeaveHome =true;
         }
         else if(ghostType==GhostType.pink)
         {
             ghostNodesState = GhostNodesStatesEnum.centerNode;
             startingNode = ghostNodeCenter;
-            respawnState = GhostNodesStatesEnum.centerNode;
         }
         else if (ghostType == GhostType.blue)
         {
             ghostNodesState = GhostNodesStatesEnum.leftNode;
             startingNode = ghostNodeLeft;
-            respawnState = GhostNodesStatesEnum.leftNode;
         }
         else if (ghostType == GhostType.orange)
         {
             ghostNodesState = GhostNodesStatesEnum.rightNode;
             startingNode = ghostNodeRight;
-            respawnState = GhostNodesStatesEnum.rightNode;
         }
         movementController.currentNode = startingNode;
         transform.position = startingNode.transform.position;
@@ -77,12 +79,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(testRespawn== true)
-        {
-            ReadyToLeaveHome = false;
-            ghostNodesState = GhostNodesStatesEnum.respawning;
-            testRespawn = false;
-        }
+        
     }
 
     public void reachedCenterOfNode(NodeController nodeController)
@@ -195,7 +192,20 @@ public class EnemyController : MonoBehaviour
     }
     void DetermineOrangeGhostDirection()
     {
+            float distance = Vector2.Distance(gameManager.pacman.transform.position, transform.position);
+            float distanceBetweenNodes = 0.31f;
 
+            if(distance<0)
+            {
+                distance = -1;
+            }
+            if(distance <= distanceBetweenNodes * 8)
+            {
+                DetermineRedGhostDirection();
+            }
+            else{
+                
+            }
     }
     string GetClosestDirection(Vector2 target)
     {
@@ -250,4 +260,19 @@ public class EnemyController : MonoBehaviour
         }
         return newDirection;
     }
+
+    public void SetVisible(bool newVisible){
+        isVisible = newVisible;
+    }
+
+      public void OnTriggerEnter2D(Collider2D collision){
+            if(collision.tag== "Player"){
+                if(gameManager.redGhost || gameManager.blueGhost || gameManager.pinkGhost || gameManager.OrangeGhost){
+                    gameManager.death.Play();
+                }
+                 SceneManager.LoadScene("Restart");
+            }
+        }
+   
+      
 }
