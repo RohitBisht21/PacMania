@@ -7,8 +7,8 @@ public class MovementController : MonoBehaviour
     public GameObject currentNode;
     public float speed = 5f;
 
-    public string direction = "";
-    public string lastMovngDirection = "";
+    public Direction direction;
+    public Direction lastMovngDirection;
 
     public GameManager gameManager;
     public bool canWarp = true;
@@ -31,7 +31,7 @@ public class MovementController : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, currentNode.transform.position, speed * Time.deltaTime);
 
         bool reverseDirection = false;
-        if((direction=="left" && lastMovngDirection == "right") || (direction=="right"&& lastMovngDirection=="left") || (direction == "up" && lastMovngDirection == "down") || (direction == "down" && lastMovngDirection == "up"))
+        if((direction==Direction.LEFT && lastMovngDirection == Direction.RIGHT) || (direction==Direction.RIGHT&& lastMovngDirection==Direction.LEFT) || (direction == Direction.UP&& lastMovngDirection == Direction.DOWN) || (direction == Direction.DOWN && lastMovngDirection == Direction.UP))
         {
             reverseDirection = true;
         }
@@ -45,16 +45,16 @@ public class MovementController : MonoBehaviour
            if (currentNodeController.isWarpNodeLeft && canWarp)
             {
                 currentNode = gameManager.rightWarpNode;
-                direction = "left";
-                lastMovngDirection = "left";
+                direction = Direction.LEFT;
+                lastMovngDirection = Direction.LEFT;
                 transform.position = currentNode.transform.position;
                 canWarp = false;
             }
            else if (currentNodeController.isWarpNodeRight && canWarp)
             {
                 currentNode = gameManager.leftWarpNode;
-                direction = "right";
-                lastMovngDirection = "right";
+                direction = Direction.RIGHT;
+                lastMovngDirection = Direction.RIGHT;
                 transform.position = currentNode.transform.position;
                 canWarp = false;
             }
@@ -80,7 +80,7 @@ public class MovementController : MonoBehaviour
         }
     }
 
-    public void SetDirection(string newDirection)
+    public void SetDirection(Direction newDirection)
     {
         direction = newDirection;
     }

@@ -6,6 +6,7 @@ public class GameOver : MonoBehaviour
 {
     public void Restart()
     {
+        Scoremanager.scoreCount = 0;
        SceneManager.LoadScene("GameScene");
     }
     public void Exit(){
