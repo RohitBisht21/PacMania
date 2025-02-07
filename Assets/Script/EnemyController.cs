@@ -278,13 +278,18 @@ public class EnemyController : MonoBehaviour
     public void SetVisible(bool newVisible){
         isVisible = newVisible;
     }
-
+    public IEnumerator LoadGameOverScene()
+    {
+        yield return new WaitForSecondsRealtime(2f);
+        SceneManager.LoadScene("Restart");
+    }
       public void OnTriggerEnter2D(Collider2D collision){
             if(collision.tag== "Player"){
                 if(gameManager.redGhost || gameManager.blueGhost || gameManager.pinkGhost || gameManager.OrangeGhost){
                     gameManager.death.Play();
-                }
-                 SceneManager.LoadScene("Restart");
+                    Time.timeScale = 0;
+            }
+                StartCoroutine(nameof(LoadGameOverScene));
             }
         }
    
